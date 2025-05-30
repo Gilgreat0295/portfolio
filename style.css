@@ -1,0 +1,293 @@
+:root {
+  --orange-yellow-gradient-soft: linear-gradient(135deg, #FFB347, #FFEB3B);
+  --orange-yellow-gradient-deep: linear-gradient(135deg, #FF8C00, #FFD700);
+  --sky-navy-gradient-soft: linear-gradient(135deg, #87CEEB, #1A237E);
+  --sky-navy-gradient-deep: linear-gradient(135deg, #00BFFF, #000066);
+  --green-gradient-soft: linear-gradient(135deg, #A8E6A3, #2E7D32);
+  --green-gradient-deep: linear-gradient(135deg, #66BB6A, #004d00);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    background-color: whitesmoke;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-width: 250px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background-color: white;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.card1 .top {
+    background: var(--orange-yellow-gradient-deep) ;
+    padding: 20px;
+    color: white;
+    border-radius: 12px;
+}
+
+.card2 .top {
+    background: var(--sky-navy-gradient-deep) ;
+    padding: 20px;
+    color: white;
+    border-radius: 12px;
+}
+
+.card3 .top {
+    background: var(--green-gradient-deep) ;
+    padding: 20px;
+    color: white;
+    border-radius: 12px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+.top p {
+    font-size: .8rem;
+}
+
+.top hr {
+    margin-block: 5px;
+}
+
+.middle {
+    margin-block: 20px;
+    position: relative;
+}
+
+.middle .currency {
+font-size: 2rem;
+position: absolute;
+left: 70px;
+top: 5px;
+}
+
+.middle .price {
+font-size: 4rem;
+font-weight: 700;
+}
+
+.middle .month {
+position: absolute;
+right: 70px;
+bottom: 5px;
+}
+
+.divider1 {
+    max-width: 80%;
+    height: 2px;
+    background-color: white;
+    margin-inline: auto;
+    margin-block: 5px;
+}
+
+.divider2 {
+    max-width: 40%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+.bottom {
+    padding-inline: 10px;
+}
+
+.bottom .list {
+    font-size:.7rem;
+    text-align: left;
+    line-height: 18px;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.list-items{
+    display: flex;
+    gap: 10px;
+    align-items: first baseline;
+}
+
+.list p {
+    margin-bottom: 10px;
+}
+
+.card1 .bulletting {
+    width: 10px;
+    height: 8px;
+    background: var(--orange-yellow-gradient-deep);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card2 .bulletting {
+    width: 10px;
+    height: 8px;
+    background: var(--sky-navy-gradient-deep);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card3 .bulletting {
+    width: 10px;
+    height: 8px;
+    background: var(--green-gradient-deep);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.card1 input[type="button"]{
+    padding: 5px 15px;
+    margin:20px 0 50px 0 ;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background: var(--orange-yellow-gradient-deep);
+    color: white;
+    font-size: .8rem;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+.card2 input[type="button"]{
+    padding: 5px 15px;
+    margin:20px 0 50px 0 ;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background: var(--sky-navy-gradient-deep);
+    color: white;
+    font-size: .8rem;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+.card3 input[type="button"]{
+    padding: 5px 15px;
+    margin:20px 0 50px 0 ;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background: var(--green-gradient-deep);
+    color: white;
+    font-size: .8rem;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+}
+
+.card1 [type="button"]:hover{
+    background: var(--orange-yellow-gradient-soft);
+    color: white;
+    font-size: .8rem;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card2 [type="button"]:hover{
+    background: var(--sky-navy-gradient-soft);
+    color: white;
+    font-size: .8rem;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card3 [type="button"]:hover{
+    background: var(--green-gradient-soft);
+    color: white;
+    font-size: .8rem;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px){
+    .card {
+        max-width: 300px;
+
+}
+
+.container {
+flex-direction: column;
+height: 100%;
+}
+
+}
